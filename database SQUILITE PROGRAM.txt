@@ -1,0 +1,14 @@
+Base de datos SQLITE PROGRAMA  “MI TARJETA DE CREDITO”
+CREATE TABLE "Gasto" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT  ,
+    "cantidad" decimal(18,2) NOT NULL,
+    "fecha" date not null,
+    "descripcion" TEXT NOT NULL
+)
+CREATE TABLE "Pago" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT  ,
+    "cantidad" decimal(18,2) NOT NULL,
+    "fecha" date not null,
+    "descripcion" TEXT NOT NULL
+)
+insert into gasto (cantidad, descripcion) values (12.50, "prueba inserccion");
